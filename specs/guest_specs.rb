@@ -7,11 +7,11 @@ class TestGuests < MiniTest::Test
 
   def setup
 
-  @name_1 = Name.new("Jamie")  
+  @guest_1 = Name.new("Jamie")  
 
   end
 
   def test_name_of_guest
-  assert_equal("Jamie", @name_1.name())
+  assert_equal("Jamie", @guest_1.name())
   end
 end

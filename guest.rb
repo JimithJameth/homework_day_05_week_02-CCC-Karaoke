@@ -1,4 +1,4 @@
-class Name
+class Guest
 
   attr_reader :name
 
