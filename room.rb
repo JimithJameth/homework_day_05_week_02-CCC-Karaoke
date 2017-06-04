@@ -26,15 +26,15 @@ class Room
     end
   end
 
-def find_person(guest_to_find)
-  found_guest = nil
-  for guest in @guests
-    if guest == guest_to_find
-      found_guest = guest
+  def find_person(guest_to_find)
+    found_guest = nil
+    for guest in @guests
+      if guest == guest_to_find
+        found_guest = guest
+      end
     end
+    return found_guest
   end
-  return found_guest
-end
 
   def check_out(guest)
     person = find_person(guest)
@@ -43,9 +43,9 @@ end
     end   
   end
 
-def add_song(song)
-  @songs.push song
-end
+  def add_song(song)
+    @songs.push song
+  end
 end
 
 
